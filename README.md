@@ -1,16 +1,58 @@
-# React + Vite
+# Stopwatch & Timer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React + Vite application that combines a stopwatch and a countdown timer in one interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Stopwatch with start, pause, and reset controls
+- Timer that accepts a second count, then counts down
+- Alert sound when the timer reaches zero
+- Light/dark mode toggle for easy viewing
+- Built with React and Vite for fast development
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/App.jsx` — main application shell and dark mode toggle
+- `src/components/Stopwatch.jsx` — stopwatch UI and logic
+- `src/components/Timer.jsx` — timer input, countdown, and audio alert
+- `src/components/style.css` — shared styles for cards, buttons, and layout
+- `src/assets/beep.mp3` — timer completion sound
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+Open the local development URL shown in the terminal to view the app.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview the production build
+
+```bash
+npm run preview
+```
+
+## Scripts
+
+- `npm run dev` — start the Vite development server
+- `npm run build` — create a production build
+- `npm run preview` — preview the built app locally
+- `npm run lint` — run ESLint across the project
+
+## Notes
+
+The app is configured as a Vite React project and uses React 19.
