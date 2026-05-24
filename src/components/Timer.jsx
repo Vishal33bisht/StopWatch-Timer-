@@ -52,15 +52,16 @@ function Timer() {
       <div className="time">{formatTime()}</div>
 
       <div className="buttons">
-        <button onClick={handleStart}>
+        <button className="button primary" onClick={handleStart}>
           Start
         </button>
 
-        <button onClick={() => setIsRunning(false)}>
+        <button className="button secondary" onClick={() => setIsRunning(false)}>
           Pause
         </button>
 
         <button
+          className="button ghost"
           onClick={() => {
             setIsRunning(false);
             setTimeLeft(0);

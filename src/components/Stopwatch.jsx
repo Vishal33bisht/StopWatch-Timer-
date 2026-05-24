@@ -33,15 +33,16 @@ function Stopwatch() {
       <div className="time">{formatTime()}</div>
 
       <div className="buttons">
-        <button onClick={() => setIsRunning(true)}>
+        <button className="button primary" onClick={() => setIsRunning(true)}>
           Start
         </button>
 
-        <button onClick={() => setIsRunning(false)}>
+        <button className="button secondary" onClick={() => setIsRunning(false)}>
           Pause
         </button>
 
         <button
+          className="button ghost"
           onClick={() => {
             setIsRunning(false);
             setSeconds(0);
