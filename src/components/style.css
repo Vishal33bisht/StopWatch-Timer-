@@ -13,6 +13,13 @@ body {
   color: #e5e7eb;
 }
 
+.app.dark h1{
+  color: #e5e7eb;
+}
+
+.app.light h1{
+  color: #0f172a;
+}
 .app {
   min-height: 100vh;
   padding: 44px 28px 60px;
@@ -67,6 +74,17 @@ body {
   background: rgba(15, 23, 42, 0.06);
   color: #0f172a;
   border-color: rgba(15, 23, 42, 0.12);
+}
+
+/* Ensure inputs are readable in light mode */
+.app.light input {
+  background: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.app.light input::placeholder {
+  color: rgba(15, 23, 42, 0.45);
 }
 
 .dark-mode-toggle:hover {
